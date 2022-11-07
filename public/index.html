@@ -15,29 +15,142 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!--==================== Icons ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Daniela Fuentes</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#about" class="nav__logo">
+          Daniela<span></span>
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#about" class="nav__link active-link">
+                <i class="uil uil-user nav__icon"></i> About me
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#technologies" class="nav__link">
+                <i class="uil uil-book-open nav__icon"></i> Technologies
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> Contact
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== ABOUT ME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__img">
+              <img src="./profile-img.svg" alt="profile img">
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title">Hi! I Am Daniela Fuentes</h1>
+              <p class="home__description">
+                I'm a frontend developer who enjoys the challenge of
+                <span class="home__highlight">solving</span> modern 
+                <span class="home__highlight">problems</span> through code.
+              </p>
+              <a href="#contact" class="button">Hire me!</a>
+            </div>
+
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/danielafuentesdev/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://github.com/fifete"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1EtxbRRP_cVUBeDqzBra751i9sAeP53-3/view?usp=sharing"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i>CV</i>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== FEATURED PROJECTS ====================-->
+      <section class="portfolio section" id="projectos">
+        <h2 class="section__title">Featured projects</h2>
+        <span class="section__subtitle">I'm most proud of</span>
+
+        <div class="portfolio__container container swiper mySwiper">
+          <div class="swiper-wrapper">
+
+            <!--==================== PROJECT 1 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./img/projects/Karma-Burger-NewOrder.png"
+                alt=""
+                class="portfolio__img"
+              />
+              <div class="portfolio__data">
+                <div class="portfolio__1stRow">
+                  <h3 class="portfolio__title">😸 Kitty chat</h3>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="portfolio__button"
+                  >
+                    <i class="uil uil-arrow-up-right button__icon"></i>
+                  </a>
+                </div>
+                <p class="portfolio__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer risus nisl, ornare vitae nibh vel, sodales malesuada dolor. Integer arcu enim, hendrerit ac ex aliquam, pharetra ornare mauris. Integer tincidunt interdum ligula et congue. Vestibulum lacinia aliquam nibh, et
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Add Pagination-->
+          <div class="swiper-pagination">dots</div>
+        </div>
+      </section>
+   </main>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
