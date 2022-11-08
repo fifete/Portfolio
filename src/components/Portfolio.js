@@ -1,6 +1,5 @@
 import React from 'react';
 import { Project } from './Project';
-import '../styles/app.scss'
 
 export const Portfolio = ({data}) => {
   return (

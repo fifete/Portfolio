@@ -1,5 +1,4 @@
 import './App.css';
-import './styles/test.css';
 import { Featured } from './components/Featured';
 import { Home } from './components/Home';
 import { Portfolio } from './components/Portfolio';
