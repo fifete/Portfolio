@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const ModalProject = ({modalData, technologies}) => {
+export const ModalProject = ({modalData, technologies, id}) => {
   return (
     <div className="services__modal">
       <div className="services__modal-content">
@@ -30,16 +30,13 @@ export const ModalProject = ({modalData, technologies}) => {
           </li>
 
           <div className="flex__project-techs">
-            {technologies.map(tech => (
-              <div className="flex__tech">
+            {technologies.filter(item => item.projects.includes(id))
+              .map(tech => (
+              <div className="flex__tech" key={tech.name}>
                 <img src={tech.src} className="tech__icon" alt="" />
                 <h3 className="skills__name">{tech.name}</h3>
               </div>
             ))}
-{/*             <div className="flex__tech">
-              <img src="#" className="tech__icon" alt="" />
-              <h3 className="skills__name">Firebase</h3>
-            </div> */}
           </div>
         </ul>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ModalProject } from './ModalProject';
 
-export const Project = ({projectInfo, technologies}) => {
+export const Project = ({projectInfo, technologies, id}) => {
   return (
     <div className="work__card mix design responsive">
       <img
@@ -26,6 +26,7 @@ export const Project = ({projectInfo, technologies}) => {
       <ModalProject 
         modalData={projectInfo.modal}
         technologies={technologies}
+        id={id}
       />
     </div>
   );

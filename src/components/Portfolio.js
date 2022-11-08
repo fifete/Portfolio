@@ -1,9 +1,10 @@
 import React from 'react';
 import { Project } from './Project';
+import '../styles/app.scss'
 
 export const Portfolio = ({data}) => {
   return (
-    <section className="works section" id="portfolio">
+    <section className="works section test" id="portfolio">
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Fulfilled projects</span>
 
@@ -27,6 +28,7 @@ export const Portfolio = ({data}) => {
           <Project 
             projectInfo={project} 
             technologies={data.technologies}
+            id={project.id}
             key={project.id}/>
           ))}
       </div>
