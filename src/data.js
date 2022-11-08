@@ -2,7 +2,7 @@ export const data = {
   projects: [
     {
       id: 1,
-      Info: {
+      basic: {
         title: 'KittyChat',
         src: 'kingMax',
         github: 'https://github.com/fifete/kittychat-frontend',
@@ -16,7 +16,7 @@ export const data = {
     },
     {
       id: 2,
-      Info: {
+      basic: {
         title: 'A+Aventuras',
         src: 'a+Aventuras',
         github: 'https://github.com/fifete/turist-social-network',

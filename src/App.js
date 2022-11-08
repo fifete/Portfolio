@@ -2,6 +2,7 @@ import './App.css';
 import { Featured } from './components/Featured';
 import { Home } from './components/Home';
 import { Portfolio } from './components/Portfolio';
+import { data } from './data';
 
 function App() {
   return (
@@ -10,10 +11,14 @@ function App() {
       <Home/>
       
       {/* <!--==================== FEATURED PROJECTS ====================--> */}
-      <Featured />
+      <Featured
+        data={data}
+      />
 
       {/* <!--==================== PORTFOLIO ====================--> */}
-      <Portfolio />
+      <Portfolio 
+        data={data}
+      />
     </main>
   );
 }

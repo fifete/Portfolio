@@ -1,7 +1,7 @@
 import React from 'react';
 import { Project } from './Project';
 
-export const Portfolio = () => {
+export const Portfolio = ({data}) => {
   return (
     <section className="works section" id="portfolio">
       <h2 className="section__title">Portfolio</h2>
@@ -23,7 +23,12 @@ export const Portfolio = () => {
         {/* <!--==================== PORTFOLIO WEB ====================--> */}
 
         {/* <!--==================== por un arreglo de project crea este component ====================--> */}
-        <Project />
+        {data.projects.map(project => (
+          <Project 
+            projectInfo={project} 
+            technologies={data.technologies}
+            key={project.id}/>
+          ))}
       </div>
     </section>
   );
