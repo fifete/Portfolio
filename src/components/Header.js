@@ -1,8 +1,9 @@
 import React from 'react';
+import '../styles/navbar.css'
 
 export const Header = () => {
   return (
-    <header className="header" id="header">
+    <header className="header scroll-header" id="header">
       <nav className="nav container">
         <a href="#about" className="nav__logo">
           Daniela<span></span>
