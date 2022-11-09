@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/portfolio.css'
+import '../styles/modal.css'
 import { Project } from './Project';
 
 export const Portfolio = ({data}) => {
@@ -20,7 +21,7 @@ export const Portfolio = ({data}) => {
         </span>
       </div>
 
-      <div className="work__container container grid">
+      <div className="work__container container">
         {/* <!--==================== PORTFOLIO WEB ====================--> */}
 
         {/* <!--==================== por un arreglo de project crea este component ====================--> */}
