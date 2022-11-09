@@ -16,8 +16,6 @@
   margin-block: var(--mb-1) var(--mb-2);
 }
 
-.home__social p {font-weight: 500;}
-
 span.home__highlight {
   font-weight: 600;
   font-style: oblique;

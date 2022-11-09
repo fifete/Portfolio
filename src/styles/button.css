@@ -1,0 +1,48 @@
+.button {
+    display: inline-block;
+    background-color: hsl(var(--clr-dark));
+    color: #FFF;
+    padding: .9em 1.2em;
+    border-radius: .5rem;
+    font-weight: var(--fw-medium);
+  }
+
+.button:hover {
+  background-color: hsl(var(--clr-dark)/ .8);
+}
+
+.button__icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: .3s;
+}
+
+.button--white {
+  background-color: #FFF;
+  color: hsl(var(--clr-dark));
+}
+
+.button--white:hover {
+  background-color: #FFF;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+}
+
+.button--small{
+  padding: .75rem 1rem;
+}
+
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: hsl(var(--clr-dark));
+}
+
+.button--link:hover {
+  background-color: transparent;
+  color: hsl(var(--clr-dark)/ .8);
+}

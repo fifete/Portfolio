@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/button.css'
 import { Featured } from './components/Featured';
 import { Home } from './components/Home';
 import { Portfolio } from './components/Portfolio';
