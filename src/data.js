@@ -124,9 +124,3 @@ export const data = {
     },
   ],
 };
-
-/* 
-ReactJS+ CSS3 + socket.io + Express.js + Git + Postgresql + SQL
- Html5 + CSS3 + Typescript+ Angular + Git + Jasmine + Firebase
- Html5 + CSS3 + JavaScript + Firebase+ Jest + Git
- */
