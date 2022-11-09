@@ -79,7 +79,7 @@ export const data = {
     },
     {
       name: 'Angular',
-      src: 'https://img.icons8.com/color/48/000000/firebase.png',
+      src: 'https://img.icons8.com/color/48/000000/angularjs.png',
       projects: [3]
     },
     {
@@ -114,12 +114,12 @@ export const data = {
     },
     {
       name: 'Jasmine',
-      src: '%PUBLIC_URL%/assets/images/tech/jasmine.png',
+      src: 'https://i.imgur.com/ITpVQxz.png',
       projects: [3]
     },
     {
       name: 'Jest',
-      src: '%PUBLIC_URL%/assets/images/tech/jest.png',
+      src: 'https://i.imgur.com/iLtGD5c.png',
       projects: [2, 4, 5]
     },
   ],

@@ -5,7 +5,7 @@
 
 .services__content {
   position: relative;
-  background-color: var(--container-color);
+  background-color: hsl(var(--clr-light-100));
   padding: 3.5rem .5rem 1.25rem 1.5rem;
   border-radius: .25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
@@ -19,19 +19,19 @@
 .services__icon {
   display: block;
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: hsl(var(--clr-dark));
   margin-bottom: var(--mb-1);
 }
 
 .services__title {
-  font-size: var(--h3-font-size);
+  font-size: var(--h3-fs);
   margin-bottom: var(--mb-1);
-  font-weight: var(--font-medium);
+  font-weight: var(--fw-medium);
 }
 
 .services__button{
   cursor: pointer;
-  font-size: var(--small-font-size);
+  font-size: var(--small-fs);
   font-size: large;
 }
 
@@ -51,14 +51,12 @@
   justify-content: center;
   padding: 0 1rem;
   z-index: var(--z-modal);
-  opacity: 0;
-  visibility: hidden;
   transition: .3s;
 }
 
 .services__modal-content {
   position: relative;
-  background-color: var(--container-color);
+  background-color: hsl(var(--clr-light-100));
   padding: 1.5rem;
   border-radius: .5rem;
 }
@@ -72,8 +70,8 @@
 }
 
 .services__modal-title {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
+  font-size: var(--h3-fs);
+  font-weight: var(--fw-medium);
   margin-bottom: var(--mb-1-5);
 }
 
@@ -82,17 +80,40 @@
   top: 1rem;
   right: 1rem;
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: hsl(var(--clr-dark));
   cursor: pointer;
 }
 
 .services__modal-icon {
-  color: var(--first-color);
+  color: hsl(var(--clr-dark));
   margin-right: var(--mb-0-25);
 }
 
-/* Active Modal */
-.active-modal {
-  opacity: 1;
-  visibility: visible;
+.tech__icon {
+  width: 2rem;
+}
+
+.flex__tech {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.flex__project {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem 0 0;
+}
+
+.flex__project-techs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skills__name {
+  font-size: var(--normal-fs);
+  font-weight: var(--fw-medium);
 }

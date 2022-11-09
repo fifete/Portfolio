@@ -1,11 +1,14 @@
 import React from 'react';
 
-export const ModalProject = ({modalData, technologies, id}) => {
+export const ModalProject = ({modalData, technologies, id, toggleModal}) => {
   return (
     <div className="services__modal">
       <div className="services__modal-content">
         <h4 className="services__modal-title">😸{modalData.title}</h4>
-        <i className="uil uil-times services__modal-close"></i>
+        <i 
+          className="uil uil-times services__modal-close"
+          onClick={toggleModal}
+        ></i>
 
         <ul className="services__modal-services grid">
           <li className="services__modal-service">
