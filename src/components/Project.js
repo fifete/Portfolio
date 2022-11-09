@@ -21,10 +21,10 @@ export const Project = ({projectInfo, technologies, id}) => {
           ></i>
         </div>
         <div className="flex__project">
-          <a href={projectInfo.basic.github} className="work__button">
+          <a href={projectInfo.basic.demo} className="work__button">
             Demo<i className="uil uil-angle-double-right work__icon"></i>
           </a>
-          <a href={projectInfo.basic.demo} className="work__button">
+          <a href={projectInfo.basic.github} className="work__button">
             Github<i className="uil uil-angle-double-right work__icon"></i>
           </a>
         </div>
