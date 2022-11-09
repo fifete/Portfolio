@@ -1,0 +1,40 @@
+.home__img {
+  margin-bottom: var(--mb-2);
+}
+
+.home__content > * + * {
+  margin-top: var(--mb-1-5);
+}
+
+.home__title {
+  font-size: var(--big-fs);
+  font-weight: var(--fw-bold);
+  line-height: 1.3;
+}
+
+.home__description {
+  margin-block: var(--mb-1) var(--mb-2);
+}
+
+.home__social p {font-weight: 500;}
+
+span.home__highlight {
+  font-weight: 600;
+  font-style: oblique;
+  color: hsl(var(--clr-dark));
+}
+
+.home__social {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.home__social-icon {
+  font-size: 1.25rem;
+  color: hsl(var(--clr-dark));
+}
+
+.home__social-icon:hover {
+  color: hsl(var(--clr-dark)/ .8);
+}

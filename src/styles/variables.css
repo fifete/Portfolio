@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -33,6 +33,7 @@
   /*========== Font weight ==========*/
   --fw-medium: 500;
   --fw-semi-bold: 600;
+  --fw-bold: 700;
 
   /*========== Margenes Bottom ==========*/
   --mb-0-25: .25rem;
