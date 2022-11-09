@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/navbar.css'
 
 export const Header = () => {
+  const [visible, setVisible] = useState('false')
+  const toggleMenu = () => {
+    setVisible(prev => !prev)
+  }
   return (
     <header className="header scroll-header" id="header">
       <nav className="nav container">
         <a href="#about" className="nav__logo">
           Daniela<span></span>
         </a>
-
-        <div className="nav__menu" id="nav-menu">
+        
+        {
+        <div className={`nav__menu ${visible ? 'show-menu' : 'hide-menu'}`} id="nav-menu">
           <ul className="nav__list grid">
             <li className="nav__item">
               <a href="#about" className="nav__link active-link">
@@ -32,14 +37,13 @@ export const Header = () => {
               </a>
             </li>
           </ul>
-          <i className="uil uil-times nav__close" id="nav-close"></i>
-        </div>
+          <i className="uil uil-times nav__close" onClick={toggleMenu}></i>
+        </div>}
 
         <div className="nav__btns">
           {/* <!-- Theme change button --> */}
           <i className="uil uil-moon change-theme" id="theme-button"></i>
-
-          <div className="nav__toggle" id="nav-toggle">
+          <div className="nav__toggle" onClick={toggleMenu}>
             <i className="uil uil-apps"></i>
           </div>
         </div>
