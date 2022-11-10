@@ -3,8 +3,8 @@ export const data = {
     {
       id: 1,
       basic: {
-        title: 'KittyChat',
-        src: 'kingMax',
+        title: 'KittyChat 😸',
+        src: 'kittyChat',
         github: 'https://github.com/fifete/kittychat-frontend',
         demo: 'https://voluble-custard-29d29e.netlify.app/'
       },
@@ -17,7 +17,7 @@ export const data = {
     {
       id: 2,
       basic: {
-        title: 'A+Aventuras',
+        title: 'A+Aventuras 👨‍👩‍👧‍👧',
         src: 'a+Aventuras',
         github: 'https://github.com/fifete/turist-social-network',
         demo: 'https://fifete.github.io/turist-social-network/'
@@ -31,7 +31,7 @@ export const data = {
     {
       id: 3,
       basic: {
-        title: 'Burgerqueen',
+        title: 'Burgerqueen 🍔',
         src: 'burguerQueen',
         github: 'https://github.com/fifete/LIM018-burger-queen',
         demo: 'https://burguerqueens.netlify.app/'
@@ -45,7 +45,7 @@ export const data = {
     {
       id: 4,
       basic: {
-        title: 'Studio Ghibli',
+        title: 'Studio Ghibli 🎥',
         src: 'studioGhibli',
         github: 'https://github.com/fifete/studio-ghibli',
         demo: 'https://fifete.github.io/studio-ghibli/'
@@ -59,7 +59,7 @@ export const data = {
     {
       id: 5,
       basic: {
-        title: 'KingMax',
+        title: 'KingMax 💳',
         src: 'kingMax',
         github: 'https://github.com/fifete/Card-validation',
         demo: 'https://fifete.github.io/Card-validation/'
@@ -68,6 +68,20 @@ export const data = {
         title: 'KingMax',
         rol: 'Frontend Developer | Designer UI & UX',
         description: `Validation of the card number 💳 to make the payment of the service subscription 🎦 KINGMAX`
+      }
+    },
+    {
+      id: 6,
+      basic: {
+        title: 'your-markdown-links 💳',
+        src: 'your-md',
+        github: 'https://github.com/fifete/your-md-links',
+        demo: 'https://www.npmjs.com/package/your-markdown-links'
+      },
+      modal: {
+        title: 'your-markdown-links',
+        rol: 'NodeJS Developer',
+        description: `Command line library (CLI) developed with Node. js, which allows to validate and report some statistics📊 about the URLs found in files 📁 in Markdown 📑 format given a path.`
       }
     }
   ],
@@ -85,7 +99,7 @@ export const data = {
     {
       name: 'JavaScript',
       src: 'https://img.icons8.com/color/48/000000/javascript.png',
-      projects: [2, 4, 5]
+      projects: [2, 4, 5, 6]
     },
     {
       name: 'Typescript',
@@ -111,6 +125,11 @@ export const data = {
       name: 'PostgreSQL',
       src: 'https://img.icons8.com/color/48/000000/postgresql.png',
       projects: [1]
+    },
+    {
+      name: 'NodeJS',
+      src: 'https://img.icons8.com/color/48/000000/nodejs.png',
+      projects: [6]
     },
     {
       name: 'Jasmine',
