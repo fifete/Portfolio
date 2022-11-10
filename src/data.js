@@ -2,6 +2,7 @@ export const data = {
   projects: [
     {
       id: 1,
+      categories: ['web'],
       basic: {
         title: 'KittyChat 😸',
         src: 'kittyChat',
@@ -16,6 +17,7 @@ export const data = {
     },
     {
       id: 2,
+      categories: ['web', 'responsive'],
       basic: {
         title: 'A+Aventuras 👨‍👩‍👧‍👧',
         src: 'a+Aventuras',
@@ -30,6 +32,7 @@ export const data = {
     },
     {
       id: 3,
+      categories: ['web'],
       basic: {
         title: 'Burgerqueen 🍔',
         src: 'burguerQueen',
@@ -44,6 +47,7 @@ export const data = {
     },
     {
       id: 4,
+      categories: ['web', 'responsive'],
       basic: {
         title: 'Studio Ghibli 🎥',
         src: 'studioGhibli',
@@ -58,6 +62,7 @@ export const data = {
     },
     {
       id: 5,
+      categories: ['web'],
       basic: {
         title: 'KingMax 💳',
         src: 'kingMax',
@@ -72,8 +77,9 @@ export const data = {
     },
     {
       id: 6,
+      categories: [],
       basic: {
-        title: 'your-markdown-links 💳',
+        title: 'your-markdown-links 📊',
         src: 'your-md',
         github: 'https://github.com/fifete/your-md-links',
         demo: 'https://www.npmjs.com/package/your-markdown-links'

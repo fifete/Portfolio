@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ModalProject } from './ModalProject';
 
 export const Project = ({ projectInfo, technologies, id }) => {
-  const [modal, setModal] = useState('false');
+  const [modal, setModal] = useState(false);
   const toggleModal = () => setModal((prev) => !prev);
   return (
     <>

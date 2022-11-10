@@ -5,6 +5,13 @@ import { Project } from './Project';
 
 export const Portfolio = ({data}) => {
   const [category, setCategory] = useState('all')
+  const categorizeItems = items => items.map(project => (
+    <Project 
+      projectInfo={project} 
+      technologies={data.technologies}
+      id={project.id}
+      key={project.id}/>
+    ))
   const onSetCategory = (strCategory) => {
     if (strCategory !== category){
       setCategory(strCategory)
@@ -36,15 +43,11 @@ export const Portfolio = ({data}) => {
 
       <div className="work__container container">
         {/* <!--==================== PORTFOLIO WEB ====================--> */}
-
-        {/* <!--==================== por un arreglo de project crea este component ====================--> */}
-        {data.projects.map(project => (
-          <Project 
-            projectInfo={project} 
-            technologies={data.technologies}
-            id={project.id}
-            key={project.id}/>
-          ))}
+        {
+          category === 'all' ? categorizeItems(data.projects) : (
+            categorizeItems(data.projects.filter(project => project.categories.includes(category)))
+          )
+        }
       </div>
     </section>
   );

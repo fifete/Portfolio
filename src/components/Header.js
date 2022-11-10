@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/navbar.css'
 
 export const Header = () => {
-  const [visible, setVisible] = useState('false')
+  const [visible, setVisible] = useState(false)
   const toggleMenu = () => {
     setVisible(prev => !prev)
   }
