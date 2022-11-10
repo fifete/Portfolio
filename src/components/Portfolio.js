@@ -1,22 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/portfolio.css'
 import '../styles/modal.css'
 import { Project } from './Project';
 
 export const Portfolio = ({data}) => {
+  const [category, setCategory] = useState('all')
+  const onSetCategory = (strCategory) => {
+    if (strCategory !== category){
+      setCategory(strCategory)
+    }
+  }
+
   return (
     <section className="works section">
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Fulfilled projects</span>
 
       <div className="work__filters">
-        <span className="work__item active-work" data-filter="all">
+        <span 
+          className={`work__item ${category === 'all' && "active-work"}`}
+          onClick={()=>onSetCategory('all')}>
           All
         </span>
-        <span className="work__item" data-filter=".web">
+        <span 
+          className={`work__item ${category === 'web' && "active-work"}`} 
+          onClick={()=>onSetCategory('web')}>
           Web
         </span>
-        <span className="work__item" data-filter=".responsive">
+        <span 
+          className={`work__item ${category === 'responsive' && "active-work"}`} 
+          onClick={()=>onSetCategory('responsive')}>
           Responsive
         </span>
       </div>
