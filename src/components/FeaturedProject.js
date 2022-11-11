@@ -1,27 +1,26 @@
 import React from 'react';
 
-export const FeaturedProject = () => {
+export const FeaturedProject = ({title, src, demo, description}) => {
   return (
-    <div className="portfolio__content grid swiper-slide">
+    <div className="portfolio__content grid">
       <img
-        src="./image/projects/studioGhibli.png"
+        src={`${process.env.PUBLIC_URL}/assets/images/projects/${src}.png`}
         alt=""
         className="portfolio__img"
       />
       <div className="portfolio__data">
         <div className="portfolio__1stRow">
-          <h3 className="portfolio__title">😸 Kitty chat</h3>
-          <a href="#" target="_blank" className="portfolio__button">
-            <i className="uil uil-arrow-up-right button__icon"></i>
+          <h3 className="portfolio__title">{title}</h3>
+          <a 
+            href={demo} 
+            target="_blank"
+            className="portfolio__button"
+            rel="noreferrer"
+          >
+            <i className="uil uil-arrow-up-right button__icon button-1stRow"></i>
           </a>
         </div>
-        <p className="portfolio__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus
-          nisl, ornare vitae nibh vel, sodales malesuada dolor. Integer arcu
-          enim, hendrerit ac ex aliquam, pharetra ornare mauris. Integer
-          tincidunt interdum ligula et congue. Vestibulum lacinia aliquam nibh,
-          et
-        </p>
+        <p className="portfolio__description">{description}</p>
       </div>
     </div>
   );

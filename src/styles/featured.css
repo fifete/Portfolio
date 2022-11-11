@@ -1,0 +1,141 @@
+.featured-small-layout {
+  display: block;
+}
+
+.featured-big-layout {
+  display: none;
+}
+
+.portfolio {
+  background-color: hsl(var(--clr-light-300));
+}
+
+.swiper-custom {
+  overflow: inherit;
+}
+
+.portfolio__container {
+  max-width: 560px;
+}
+
+.portfolio__content {
+  padding: 0 1.5rem;
+  background-color: hsl(var(--clr-light-300));
+}
+
+.portfolio__img {
+  width: 100%;
+  aspect-ratio: 1.7;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: .5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.portfolio__1stRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--mb-1);
+}
+
+.portfolio__title {
+  font-size: var(--h3-fs);
+}
+
+.portfolio__button {
+  background: hsl(var(--clr-dark));
+  border-radius: 50%;
+}
+
+.button-1stRow {
+  margin: 0;
+  padding: .3em;
+  color: hsl(var(--clr-light-100));
+}
+
+.portfolio__description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.button__icon:hover {
+  transform: translateX(.25rem);
+}
+
+.swiper-pagination {
+  bottom: -2rem !important;
+}
+
+.swiper-pagination>span {
+  background-color: hsl(var(--clr-dark));
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 2rem !important;
+  color: hsl(var(--clr-dark));
+}
+
+.swiper-button-prev {
+  left: -1rem;
+}
+
+.swiper-button-next {
+  right: -1rem;
+}
+
+@media screen and (min-width: 610px) {
+  .portfolio__container {
+    margin-inline: auto;
+  }
+
+  .swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 2.5rem !important;
+  }
+
+  .swiper-button-prev {
+    left: -2rem;
+  }
+  
+  .swiper-button-next {
+    right: -2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .featured-small-layout {
+    display: none;
+  }
+
+  .featured-big-layout {
+    display: flex;
+    align-items: start;
+  }
+
+  .portfolio__content:nth-child(1) {
+    padding-top: 100px;
+  }
+
+  .portfolio__content:nth-child(2) {
+    padding-top: 50px;
+  }
+
+
+  .portfolio__content {
+    padding: 0 2rem;
+  }
+
+  .portfolio__data {
+    border-top: 2px solid black;
+    padding-top: .7rem;
+    grid-row: 1;
+  }
+
+  .portfolio__description {
+    margin-bottom: var(--mb-0-75);
+    font-size: var(--smaller-fs);
+  }
+
+  .portfolio__content {
+    gap: .5rem;
+  }
+}

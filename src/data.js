@@ -2,7 +2,7 @@ export const data = {
   projects: [
     {
       id: 1,
-      categories: ['web'],
+      categories: ['web', 'featured'],
       basic: {
         title: 'KittyChat 😸',
         src: 'kittyChat',
@@ -12,12 +12,12 @@ export const data = {
       modal: {
         title: 'KittyChat',
         rol: 'Frontend Developer | Designer UX',
-        description: `kitty chat 😸 is an instant 📲 messaging application where you can create channels or join them to connect with your friends 👭👩🏼‍🤝‍🧑🏽.`
+        description: `kitty chat 😸 is an instant 📲 messaging application where you can create channels or join them to connect with your friends 👭👩🏼‍🤝‍🧑🏽 and share messages 📃.`
       }
     },
     {
       id: 2,
-      categories: ['web', 'responsive'],
+      categories: ['web', 'responsive', 'featured'],
       basic: {
         title: 'A+Aventuras 👨‍👩‍👧‍👧',
         src: 'a+Aventuras',
@@ -27,12 +27,12 @@ export const data = {
       modal: {
         title: 'A+Aventuras',
         rol: 'Frontend Developer',
-        description: `Social network 👨‍👩‍👧‍👧 where the user can promote tourism from different parts of the world 🌎, by writing their experience 📝 and posting a photo 📷 of the place.`
+        description: `Social network 👨‍👩‍👧‍👧 where the user can promote tourism from different parts of the world 🌎, by writing their experience 📝 and posting a photo 📷 of that place.`
       }
     },
     {
       id: 3,
-      categories: ['web'],
+      categories: ['web', 'featured'],
       basic: {
         title: 'Burgerqueen 🍔',
         src: 'burguerQueen',
@@ -42,7 +42,7 @@ export const data = {
       modal: {
         title: 'Burgerqueen',
         rol: 'Frontend Developer | Designer UI & UX',
-        description: `Burger Queen 🍔 🍟 is an order management platform, focused on users with the following roles: 👩 Administrator, 🤵 Waiter and 👩‍🍳 Chef.`
+        description: `Burger Queen 🍔 🍟 is an order management platform, focused on users from a restaurant with the following roles: 👩 Administrator, 🤵 Waiter and 👩‍🍳 Chef.`
       }
     },
     {

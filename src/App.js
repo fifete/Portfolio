@@ -25,7 +25,7 @@ function App() {
       {/* <!--==================== MAIN ====================--> */}
       <main className="main">
         <Home />
-        <Featured data={data} />
+        <Featured data={data.projects} />
         <Portfolio data={data} />
       </main>
 
