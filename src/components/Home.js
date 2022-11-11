@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/home.css';
 export const Home = () => {
   return (
-    <section className="section">
+    <section className="section" id='about'>
       <div className="container">
         <div className="home__img">
           <img src="./profile-img.svg" alt="profile img" />

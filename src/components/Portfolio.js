@@ -19,7 +19,7 @@ export const Portfolio = ({data}) => {
   }
 
   return (
-    <section className="works section">
+    <section className="works section" id='portfolio'>
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Fulfilled projects</span>
 

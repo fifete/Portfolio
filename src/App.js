@@ -4,8 +4,18 @@ import { Home } from './components/Home';
 import { Portfolio } from './components/Portfolio';
 import { data } from './data';
 import { Header } from './components/Header';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    const anchor = window.location.hash.slice(1);
+    if (anchor) {
+        const anchorEl = document.getElementById(anchor);
+        if (anchorEl) {
+            anchorEl.scrollIntoView({behavior: "smooth"});
+        }
+    }
+  }, []);
   return (
     <>
       {/* <!--==================== HEADER ====================--> */}
@@ -19,7 +29,7 @@ function App() {
       </main>
 
       {/* <!--==================== FOOTER ====================--> */}
-      <footer className="footer">
+      <footer className="footer" id='contact'>
         <div className="footer__bg">
           <div className="footer__container container grid">
             <div>
@@ -78,7 +88,7 @@ function App() {
       </footer>
 
       {/* <!--==================== SCROLL UP ARROW ====================--> */}
-      <a href="#home" className="scrollup" id="scroll-up">
+      <a href="#about" className="scrollup" id="scroll-up">
         <i className="uil uil-arrow-up scrollup__icon"></i>
       </a>
     </>
