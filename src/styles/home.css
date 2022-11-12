@@ -1,8 +1,17 @@
+.home__container {
+  max-width: 39ch;
+  margin-inline: auto;
+}
+
 .home__img {
   margin-bottom: var(--mb-2);
 }
 
-.home__content > * + * {
+.home__content {
+  max-width: 36ch;
+}
+
+.home__content>*+* {
   margin-top: var(--mb-1-5);
 }
 
@@ -35,4 +44,25 @@ span.home__highlight {
 
 .home__social-icon:hover {
   color: hsl(var(--clr-dark)/ .8);
+}
+
+@media screen and (min-width: 568px) {
+  .home__container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 90%;
+    max-width: 54rem;
+    padding-top: 3.5rem;
+    justify-content: space-between;
+  }
+
+  .home__img, .home__content {
+    width: 45%;
+  }
+
+  .home__content {
+    max-width: 36ch;
+  }
+
 }

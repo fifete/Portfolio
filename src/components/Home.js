@@ -3,7 +3,7 @@ import '../styles/home.css';
 export const Home = () => {
   return (
     <section className="section" id='about'>
-      <div className="container">
+      <div className="home__container container">
         <div className="home__img">
           <img src="./profile-img.svg" alt="profile img" />
         </div>
