@@ -8,14 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* body {
-  margin: 0 0 var(--header-height) 0;
-  font-family: var(--body-font) ;
-  font-size: var(--normal-fs);
-  background-color: hsl(var(--clr-light-100));
-  color: hsl(var(--clr-black));
-} */
-
 .app {
   /* margin: 0 0 var(--header-height) 0; */
   font-family: var(--body-font) ;
@@ -81,4 +73,18 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background: hsl(var(--clr-light-100));
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 6rem 0 2rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: 4rem;
+  }
+
+  .header {
+    padding:  0 1rem;
+  }
 }
