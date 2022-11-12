@@ -9,6 +9,7 @@ import { useEffect} from 'react';
 import {useLocalStorage} from './useLocalStorage'
 import { Footer } from './components/Footer';
 import { ScrollUp } from './components/ScrollUp';
+import { Technologies } from './components/Technologies';
 
 function App() {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -31,13 +32,14 @@ function App() {
   return (
     <div data-theme={theme} className='app'>
       {/* <!--==================== HEADER ====================--> */}
-      <Header switchTheme={switchTheme}/>
+      <Header switchTheme={switchTheme} theme={theme}/>
 
       {/* <!--==================== MAIN ====================--> */}
       <main className="main">
         <Home />
         <Featured data={data.projects} />
         <Portfolio data={data} />
+        <Technologies technologies={data.technologies} />
       </main>
 
       {/* <!--==================== FOOTER ====================--> */}

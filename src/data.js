@@ -95,57 +95,80 @@ export const data = {
     {
       name: 'ReactJS',
       src: 'https://img.icons8.com/color/48/000000/react-native.png',
-      projects: [1]
+      projects: [1],
+      categories: ['frontend']
     },
     {
       name: 'Angular',
       src: 'https://img.icons8.com/color/48/000000/angularjs.png',
-      projects: [3]
+      projects: [3],
+      categories: ['frontend']
     },
     {
       name: 'JavaScript',
       src: 'https://img.icons8.com/color/48/000000/javascript.png',
-      projects: [2, 4, 5, 6]
+      projects: [2, 4, 5, 6],
+      categories: ['frontend']
     },
     {
       name: 'Typescript',
       src: 'https://img.icons8.com/color/48/000000/typescript.png',
-      projects: [3]
+      projects: [3],
+      categories: ['frontend']
     },
     {
       name: 'HTML5',
       src: 'https://img.icons8.com/color/48/000000/html-5.png',
-      projects: [2, 4, 5]
+      projects: [2, 4, 5],
+      categories: ['frontend']
     },
     {
       name: 'CSS3',
       src: 'https://img.icons8.com/color/48/000000/css3.png',
-      projects: [1, 2, 3, 4, 5]
+      projects: [1, 2, 3, 4, 5],
+      categories: ['frontend']
     },
     {
       name: 'Firebase',
       src: 'https://img.icons8.com/color/48/000000/firebase.png',
-      projects: [2, 3]
+      projects: [2, 3],
+      categories: ['backend']
     },
     {
       name: 'PostgreSQL',
       src: 'https://img.icons8.com/color/48/000000/postgresql.png',
-      projects: [1]
+      projects: [1],
+      categories: ['backend']
     },
     {
       name: 'NodeJS',
       src: 'https://img.icons8.com/color/48/000000/nodejs.png',
-      projects: [6]
+      projects: [6],
+      categories: ['backend']
     },
     {
       name: 'Jasmine',
       src: 'https://i.imgur.com/ITpVQxz.png',
-      projects: [3]
+      projects: [3],
+      categories: ['testing']
     },
     {
       name: 'Jest',
       src: 'https://i.imgur.com/iLtGD5c.png',
-      projects: [2, 4, 5]
+      projects: [2, 4, 5],
+      categories: ['testing']
+    },
+    {
+      name: 'Figma',
+      src: 'https://img.icons8.com/office/48/000000/figma.png',
+      projects: [],
+      categories: ['design']
+    },
+    {
+      name: 'Canva',
+      src: 'https://img.icons8.com/fluency/48/null/canva-app.png',
+      projects: [0],
+      categories: ['design']
     },
   ],
 };
