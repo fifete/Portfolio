@@ -8,8 +8,16 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+/* body {
   margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font) ;
+  font-size: var(--normal-fs);
+  background-color: hsl(var(--clr-light-100));
+  color: hsl(var(--clr-black));
+} */
+
+.app {
+  /* margin: 0 0 var(--header-height) 0; */
   font-family: var(--body-font) ;
   font-size: var(--normal-fs);
   background-color: hsl(var(--clr-light-100));

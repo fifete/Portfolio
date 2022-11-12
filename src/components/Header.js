@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import '../styles/navbar.css'
 
-export const Header = () => {
+export const Header = ({switchTheme}) => {
   const [visible, setVisible] = useState(false)
   const toggleMenu = () => {
     setVisible(prev => !prev)
   }
+
   return (
     <header className="header scroll-header" id="header">
       <nav className="nav container">
@@ -42,7 +43,11 @@ export const Header = () => {
 
         <div className="nav__btns">
           {/* <!-- Theme change button --> */}
-          <i className="uil uil-moon change-theme" id="theme-button"></i>
+          <i 
+            className="uil uil-moon change-theme"
+            id="theme-button"
+            onClick={switchTheme}
+          ></i>
           <div className="nav__toggle" onClick={toggleMenu}>
             <i className="uil uil-apps"></i>
           </div>
