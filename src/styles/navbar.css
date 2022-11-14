@@ -12,6 +12,19 @@
   font-weight: var(--fw-medium);
 }
 
+.nav__logo h3 {
+  display: inline;
+}
+
+.nav__logo span {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-dark));
+  width: 5px;
+  aspect-ratio: 1;
+  margin-left: .2em;
+}
+
 .nav__toggle {
   font-size: 1.1rem;
   cursor: pointer;

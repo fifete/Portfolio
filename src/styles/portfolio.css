@@ -26,9 +26,10 @@
 }
 
 .work__card {
-  background-color: hsl(var(--clr-light-100));
+  background-color: rgb(248, 248, 248);
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  max-height: 19.375rem;
 }
 
 .work__card-info {
@@ -115,6 +116,10 @@
   .work__img {
     height: 240px;
   }
+
+  .work__card {
+    max-height: 25rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -141,5 +146,9 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     height: 600px;
     max-width: 80%;
+  }
+
+  .work__card {
+    max-height: 23.125rem;
   }
 }

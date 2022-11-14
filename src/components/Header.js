@@ -11,14 +11,15 @@ export const Header = ({switchTheme, theme}) => {
     <header className="header scroll-header" id="header">
       <nav className="nav container">
         <a href="#about" className="nav__logo">
-          Daniela<span></span>
+          <h3>Daniela</h3>
+          <span></span>
         </a>
         
         {
         <div className={`nav__menu ${visible ? 'show-menu' : 'hide-menu'}`} id="nav-menu">
           <ul className="nav__list grid">
             <li className="nav__item">
-              <a href="#about" className="nav__link active-link">
+              <a href="#about" className="nav__link">
                 <i className="uil uil-user nav__icon"></i> About me
               </a>
             </li>
