@@ -13,12 +13,24 @@ html {
   font-family: var(--body-font) ;
   font-size: var(--normal-fs);
   background-color: hsl(var(--clr-light-100));
-  color: hsl(var(--clr-black));
+  color: hsl(var(--clr-text));
 }
 
 h1,h2,h3,h4 {
   color: hsl(var(--clr-black));
   font-weight: var(--fw-semi-bold);
+}
+
+.section__remark h1,
+.section__remark h2,
+.section__remark h3,
+.section__remark h4 {
+  color: hsl(var(--clr-black-remark));
+}
+
+.section__remark p,
+.section__remark span {
+  color: hsl(var(--clr-text-remark));
 }
 
 ul {
@@ -37,6 +49,10 @@ img {
 /*==================== utility classes ====================*/
 .section {
   padding: 2rem 0 4rem;
+}
+
+.section__remark {
+  background-color: hsl(var(--clr-light-300));
 }
 
 .section__title {

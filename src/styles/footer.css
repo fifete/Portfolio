@@ -27,7 +27,7 @@
   }
   
   .footer__link:hover, .footer__social:hover {
-    color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-dark-hover));
   }
   
   .footer__social {

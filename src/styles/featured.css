@@ -6,10 +6,6 @@
   display: none;
 }
 
-.portfolio {
-  background-color: hsl(var(--clr-light-300));
-}
-
 .swiper-custom {
   overflow: inherit;
 }
@@ -51,7 +47,7 @@
 .button-1stRow {
   margin: 0;
   padding: .3em;
-  color: hsl(var(--clr-light-100));
+  color: #fff;
 }
 
 .portfolio__description {

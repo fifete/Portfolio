@@ -11,7 +11,7 @@ import '../styles/featured.css';
 
 export const Featured = ({ data }) => {
   return (
-    <section className="portfolio section" id="projectos">
+    <section className="portfolio section section__remark" id="projectos">
       <h2 className="section__title">Featured projects</h2>
       <span className="section__subtitle">I'm most proud of</span>
 

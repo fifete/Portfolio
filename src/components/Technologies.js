@@ -8,7 +8,7 @@ export const Technologies = ({technologies}) => {
   const testingTechs = technologies.filter(tech => tech.categories.includes('testing'))
   const designTechs = technologies.filter(tech => tech.categories.includes('design'))
   return (
-    <section className="skills section" id="technologies">
+    <section className="skills section section__remark" id="technologies">
       <h2 className="section__title">Technologies</h2>
       <span className="section__subtitle">My technical level</span>
       <div className="skills__container">

@@ -44,7 +44,7 @@ span.home__highlight {
 }
 
 .home__social-icon:hover {
-  color: hsl(var(--clr-dark)/ .8);
+  color: hsl(var(--clr-dark-hover));
 }
 
 @media screen and (min-width: 568px) {
