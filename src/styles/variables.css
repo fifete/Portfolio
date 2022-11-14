@@ -8,8 +8,8 @@
   --clr-black: 0, 1%, 14%;
   --clr-black-remark: 0, 1%, 14%;
   --clr-text: 26, 6%, 25%;
-  --clr-dark-hover: 267, 58%, 72%;
-  --clr-dark: 267 72% 68%;
+  --clr-dark-hover: 301, 53%, 69%;
+  --clr-dark: 301, 58%, 64%;
   --clr-light-300: 49 88% 67%;
   --clr-light-200: 29, 12%, 80%;
   --clr-light-100: 29, 100%, 100%;
@@ -54,9 +54,9 @@
   --clr-black-remark: 0, 1%, 14%;
   --clr-text: 23, 22%, 86%;
   --clr-text-remark: 24, 6%, 17%;
-  --clr-dark: 267, 56%, 60%;
-  --clr-dark-hover: 268, 69%, 67%;
-  --clr-light-300: 49, 65%, 57%;
+  --clr-dark: 301, 44%, 58%;
+  --clr-dark-hover: 301, 41%, 62%;
+  --clr-light-300: 48, 61%, 52%;
   --clr-light-200: 28, 19%, 85%;
   --clr-light-100: 30, 14%, 8%;
   --clr-card-container: rgb(32, 27, 24);

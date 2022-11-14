@@ -145,7 +145,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     height: 600px;
-    max-width: 80%;
+    width: 80%;
+    max-width: 80rem;
   }
 
   .work__card {

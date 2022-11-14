@@ -7,7 +7,7 @@ export const data = {
         title: 'KittyChat 😸',
         src: 'kittyChat',
         github: 'https://github.com/fifete/kittychat-frontend',
-        demo: 'https://voluble-custard-29d29e.netlify.app/'
+        demo: 'https://kittychatlim018.netlify.app/'
       },
       modal: {
         title: 'KittyChat',
