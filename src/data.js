@@ -1,6 +1,21 @@
 export const data = {
   projects: [
     {
+      id: 0,
+      categories: ['web', 'responsive', 'featured'],
+      basic: {
+        title: 'expense tracker 💰',
+        src: 'expenseTracker',
+        github: 'https://github.com/fifete/ExpensesTrackerAPI',
+        demo: 'https://expenses-tracker-ed.netlify.app/'
+      },
+      modal: {
+        title: 'Expense Tracker app',
+        rol: 'Fullstack Developer | Designer UI & UX',
+        description: `App to manage monetary expenses and provide 🔍info about the amount of money 💵💸 that the user spends in different categories and thus, be able to take some concrete action on them.`
+      }
+    },
+    {
       id: 1,
       categories: ['web', 'featured'],
       basic: {
@@ -32,7 +47,7 @@ export const data = {
     },
     {
       id: 3,
-      categories: ['web', 'featured'],
+      categories: ['web'],
       basic: {
         title: 'Burgerqueen 🍔',
         src: 'burguerQueen',
@@ -95,7 +110,7 @@ export const data = {
     {
       name: 'ReactJS',
       src: 'https://img.icons8.com/color/48/000000/react-native.png',
-      projects: [1],
+      projects: [1, 0],
       categories: ['frontend']
     },
     {
@@ -129,15 +144,27 @@ export const data = {
       categories: ['frontend']
     },
     {
+      name: 'Bootstrap',
+      src: 'https://img.icons8.com/color/48/null/bootstrap.png',
+      projects: [0],
+      categories: ['frontend']
+    },
+    {
       name: 'Firebase',
       src: 'https://img.icons8.com/color/48/000000/firebase.png',
       projects: [2, 3],
       categories: ['backend']
     },
     {
+      name: 'ASP.net core web api',
+      src: 'https://img.icons8.com/color/48/null/net-framework.png',
+      projects: [0],
+      categories: ['backend']
+    },
+    {
       name: 'PostgreSQL',
-      src: 'https://img.icons8.com/color/48/000000/postgresql.png',
-      projects: [1],
+      src: 'https://img.icons8.com/color/48/null/postgreesql.png',
+      projects: [0, 1],
       categories: ['backend']
     },
     {
@@ -167,7 +194,7 @@ export const data = {
     {
       name: 'Canva',
       src: 'https://img.icons8.com/fluency/48/null/canva-app.png',
-      projects: [0],
+      projects: [],
       categories: ['design']
     },
   ],
